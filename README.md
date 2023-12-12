@@ -22,14 +22,20 @@ Creating clear documentation and managing project tasks improved my communicatio
 
 ## Installation
 To run the Hangman game, follow these steps:
+
 1. Clone the repository:
+   
    git clone https://github.com/rodaabdulkadir/hangman672.git
+   
 2.Navigate to the project directory.
+
 3.Ensure you have Python installed.
 
 ## Usage
 1.To play the Hangman game, execute the milestone_5.py file:
+
    python milestone_5.py
+   
 2.Follow the on-screen prompts to guess letters and try to guess the word within the specified number of lives.
 
 ## File Structure
