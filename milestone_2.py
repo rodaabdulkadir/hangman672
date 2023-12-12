@@ -1,27 +1,31 @@
-import random  # Step 2: Importing the random module
+import random
 
-# Step 1: List of 5 favorite fruits
-favorite_fruits = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Pineapple']
+def get_user_input():
+    # Function to get valid user input
+    while True:
+        guess = input("Please enter a single letter: ")
+        if len(guess) == 1 and guess.isalpha():
+            return guess
+        else:
+            print("Oops! That is not a valid input. Please enter a single alphabetical character.")
 
-# Step 3: Selecting a random word from the word_list
-word_list = favorite_fruits
-word = random.choice(word_list)  # Step 4: Assigning the randomly generated word to a variable called 'word'
+def select_random_word(word_list):
+    # Function to select a random word from the word list
+    return random.choice(word_list)
 
-# Step 5: Print out the randomly chosen word
-print(word)
+def main():
+    # List of favorite fruits
+    favorite_fruits = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Pineapple']
+    
+    # Get valid user input
+    user_guess = get_user_input()
+    
+    # Select a random word from the list
+    random_word = select_random_word(favorite_fruits)
+    
+    # Display the randomly chosen word and the user's guess
+    print("Randomly chosen word:", random_word)
+    print("Your guess:", user_guess)
 
-#Task 3
-# Step 1: Ask the user to enter a single letter
-guess = input("Please enter a single letter: ")  # Step 2: Assign the input to a variable called 'guess'
-
-# Display the user's input
-print("You entered:", guess)
-
-Task 4
-# Step 1: Validation using if-else conditions
-if len(guess) == 1 and guess.isalpha():
-    # Step 2: Print "Good guess!" if the conditions are met
-    print("Good guess!")
-else:
-    # Step 3: Print an error message if the conditions are not met
-    print("Oops! That is not a valid input.")
+if __name__ == "__main__":
+    main()
