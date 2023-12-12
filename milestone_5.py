@@ -10,9 +10,9 @@ class Hangman:
         self._num_letters = len(set(self._word))
 
     def _update_word_guessed(self, guess):
-        for i, letter in enumerate(self._word):
+        for index, letter in enumerate(self._word):
             if letter == guess:
-                self._word_guessed[i] = guess
+                self._word_guessed[index] = guess
         self._num_letters -= 1
 
     def _handle_correct_guess(self, guess):
