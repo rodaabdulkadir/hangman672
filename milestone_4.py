@@ -16,13 +16,20 @@ class Hangman:
         return ', '.join(self.list_of_guesses)
 
     def check_guess(self, guess):
-        guess = guess.lower()  # Step 1: Convert guessed letter to lowercase
+        guess = guess.lower()  # Convert guessed letter to lowercase
         if guess in self.word:
             print(f"Good guess! '{guess}' is in the word.")
-        # Continue with the logic for the check_guess method in the next task
+            for i, letter in enumerate(self.word):
+                if letter == guess:
+                    self.word_guessed[i] = guess  # Replace '_' in word_guessed with guess
+            self.num_letters -= 1  # Reduce num_letters by 1 after correct guess
+        else:
+            self.num_lives -= 1  # Step 2: Reduce num_lives by 1 if guess is incorrect
+            print(f"Sorry, '{guess}' is not in the word.")
+            print(f"You have {self.num_lives} lives left.")
 
     def ask_for_input(self):
-        while True:  # Step 2: Create a while loop
+        while True:  # Create a while loop
             guess = input("Guess a letter: ")
             if len(guess) != 1 or not guess.isalpha():
                 print("Invalid letter. Please enter a single alphabetical character.")
@@ -38,8 +45,8 @@ def main():
     words = ['apple', 'banana', 'orange', 'grape', 'kiwi']
     game = Hangman(words)
 
-    game.ask_for_input()  # Step 3: Call the ask_for_input method
+    game.ask_for_input()  # Call the ask_for_input method
+    print("Word after guess:", game.display_word())
 
 if __name__ == "__main__":
     main()
-
