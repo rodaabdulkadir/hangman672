@@ -35,10 +35,15 @@ To run the Hangman game, follow these steps:
 ## File Structure
 hangman672/
 │
+
 ├── gitignore
+
 ├── milestone_2.py
+
 ├── milestone_3.py
+
 ├── milestone_4.py
+
 └──milestone_5.py
 
 ## License
