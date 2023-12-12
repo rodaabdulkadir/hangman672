@@ -34,6 +34,7 @@ To run the Hangman game, follow these steps:
 
 ## File Structure
 hangman672/
+
 │
 
 ├── gitignore
