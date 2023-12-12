@@ -7,16 +7,16 @@ What I Learned
 
 Developing the Hangman Game enhanced my understanding in several key areas:
 
-1.Object-Oriented Programming (OOP)
+1.Object-Oriented Programming (OOP):
    Creating classes, defining methods, and managing objects helped structure the game efficiently, applying principles of object-oriented programming.
    
-2.User Input Handling and Validation
+2.User Input Handling and Validation:
   Validating and processing user input taught me to manage various scenarios, ensuring the game responded appropriately to different inputs.
   
-3.Error Handling and Debugging
+3.Error Handling and Debugging:
   Troubleshooting bugs and errors improved my error handling and debugging skills, aiding in resolving issues efficiently.
   
-4.Documentation and Project Management
+4.Documentation and Project Management:
 Creating clear documentation and managing project tasks improved my communication skills and project management abilities.
 
 
